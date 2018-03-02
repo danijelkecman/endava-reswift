@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='EndavaTestTests.xctest' tests='3' failures='0'>
+  <testsuite name='EndavaTestUITests.EndavaTestUITests' tests='1' failures='0'>
+    <testcase classname='EndavaTestUITests.EndavaTestUITests' name='testExample' time='7.055'/>
+  </testsuite>
+  <testsuite name='EndavaTestTests.EndavaTestTests' tests='2' failures='0'>
+    <testcase classname='EndavaTestTests.EndavaTestTests' name='testExample' time='0.002'/>
+    <testcase classname='EndavaTestTests.EndavaTestTests' name='testPerformanceExample' time='0.330'/>
+  </testsuite>
+</testsuites>
