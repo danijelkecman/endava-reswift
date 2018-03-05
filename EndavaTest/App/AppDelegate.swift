@@ -6,35 +6,28 @@
 //  Copyright © 2017 Danijel Kecman. All rights reserved.
 //
 
-import UIKit
+import ReSwift
 import SwiftyBeaver
 
 let log = SwiftyBeaver.self
+let store = Store<AppState>(reducer: AppReducer.appReducer, state: nil)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
+  
+  var window: UIWindow?
+  var approuter: AppRouter?
+  
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    log.addDestination(ConsoleDestination())
     
-    // NewsAPI Key: 66cfbd7746dc49cc92660dddd735e899
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = _instantiateViewController()
-        window?.backgroundColor = .white
-        window?.makeKeyAndVisible()
-        
-        return true
-    }
+    let window = UIWindow(frame: UIScreen.main.bounds)
+    self.window = window
+    window.makeKeyAndVisible()
+    approuter = AppRouter(window: window)
     
-    private func _instantiateViewController() -> UINavigationController {
-        let navigationController = UINavigationController()
-        
-        let wireframe = NewsSourcesWireframe(navigationController: navigationController)
-        wireframe.show(with: .root)
-        
-        return navigationController
-    }
-
+    return true
+  }
+  
 }
 

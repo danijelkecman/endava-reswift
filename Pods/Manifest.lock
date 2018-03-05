@@ -1,43 +1,76 @@
 PODS:
   - Alamofire (4.5.0)
+  - BrightFutures (5.2.0):
+    - Result (~> 3.2)
+  - KRActivityIndicatorView (2.0.2)
+  - KRProgressHUD (3.0.0):
+    - KRActivityIndicatorView (~> 2.0.2)
   - MBProgressHUD (1.0.0)
+  - PKHUD (4.2.3)
   - ReachabilitySwift (3)
   - Result (3.2.3)
   - ReSwift (4.0.0)
+  - ReSwiftRouter (0.6.0):
+    - ReSwift (~> 4.0.0)
   - Reusable (4.0.0):
     - Reusable/Storyboard (= 4.0.0)
     - Reusable/View (= 4.0.0)
   - Reusable/Storyboard (4.0.0)
   - Reusable/View (4.0.0)
   - SnapKit (3.2.0)
+  - Spine (0.3):
+    - BrightFutures (~> 5.0)
+    - SwiftyJSON (~> 3.1.4)
   - SwiftyBeaver (1.3.0)
   - SwiftyJSON (3.1.4)
   - Unbox (2.5.0)
+  - Wrap (2.1.1)
 
 DEPENDENCIES:
   - Alamofire
+  - KRProgressHUD
   - MBProgressHUD
+  - PKHUD
   - ReachabilitySwift
   - Result
   - ReSwift
+  - ReSwiftRouter
   - Reusable
   - SnapKit
+  - Spine (from `https://github.com/wvteijlingen/Spine.git`)
   - SwiftyBeaver
   - SwiftyJSON
   - Unbox
+  - Wrap
+
+EXTERNAL SOURCES:
+  Spine:
+    :git: https://github.com/wvteijlingen/Spine.git
+
+CHECKOUT OPTIONS:
+  Spine:
+    :commit: bc82a5d7686bf663c8a37eb192423feaf0908f73
+    :git: https://github.com/wvteijlingen/Spine.git
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  BrightFutures: 8681dbb9fa831b69b6e7dc4a498b9e081d5daeb5
+  KRActivityIndicatorView: 2a9d5442ba8da6274db3afdf46aeaef7cf6dd8ad
+  KRProgressHUD: 14f9fad06080bdb1e59569104a8eda654c83e813
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  PKHUD: c7692163a09875cbf15827dc581df3c5cf7f1015
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
   ReSwift: f058ef13b46ae5f463f10605ccbbb7fb04424d8d
+  ReSwiftRouter: 81f41b37a5dd1c88e1d3d10a660ff2dcc939ba7c
   Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  Spine: 9a5076f732897dc67c0303b4b3d871cfee903efa
   SwiftyBeaver: d4b551ba34b4206c52cc4684ae90444b8aaa5afd
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   Unbox: 30e437e6151a6de16139375fd4e8dd9a664cfbf7
+  Wrap: 9cc7da7551bb81d0846cb3df9fb624c6c32d267d
 
-PODFILE CHECKSUM: 053399551cb1536f92252576104387af98de4eb7
+PODFILE CHECKSUM: 9bf70f497d6c647b5e6e3f5294e58e2a80a9353b
 
-COCOAPODS: 1.3.0
+COCOAPODS: 1.3.1

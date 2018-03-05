@@ -14,7 +14,7 @@
         <!--News Sources View Controller-->
         <scene sceneID="jf0-Lh-Bdq">
             <objects>
-                <viewController storyboardIdentifier="NewsSourcesViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vWG-zf-225" customClass="NewsSourcesViewController" customModule="EndavaTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsSourcesViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vWG-zf-225" customClass="NewsSourcesViewController" customModule="EndavaTestReSwit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="snW-hT-ejL"/>
                         <viewControllerLayoutGuide type="bottom" id="lpD-JM-6o7"/>
@@ -51,7 +51,7 @@
         <!--News Feed List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="NewsFeedListViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="NewsFeedListViewController" customModule="EndavaTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsFeedListViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="NewsFeedListViewController" customModule="EndavaTestReSwit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -89,7 +89,7 @@
         <!--News Details View Controller-->
         <scene sceneID="sTu-f2-vZA">
             <objects>
-                <viewController storyboardIdentifier="NewsDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="twB-xQ-b3O" customClass="NewsDetailsViewController" customModule="EndavaTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsDetailsViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="twB-xQ-b3O" customClass="NewsDetailsViewController" customModule="EndavaTestReSwit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g5D-X6-eSf"/>
                         <viewControllerLayoutGuide type="bottom" id="NEC-xS-E85"/>
@@ -146,6 +146,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="M2i-cM-GUJ" secondAttribute="trailing" constant="8" id="xAn-dR-7T6"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="articleAuthor" destination="1pt-dl-bgB" id="UVA-tf-dbY"/>
                         <outlet property="articleDescription" destination="QTk-Bn-BfR" id="fqO-V2-u9g"/>

@@ -10,15 +10,19 @@ import UIKit
 import Reusable
 
 class NewsFeedCell: UITableViewCell, NibReusable {
-
-    // MARK: - IBOutlets -
-    @IBOutlet weak var articleTitle: UILabel!
-    @IBOutlet weak var articleDescription: UILabel!
-    @IBOutlet weak var articleImage: UIImageView!
-    
-    func configure(with item: NewsFeedItem) {
-        articleTitle.text = item.author
-        articleDescription.text = item.title // String(item.description.characters.filter { !"\n\r".characters.contains($0) })
-        articleImage.image(from: item.imageUrl)
+  
+  // MARK: - IBOutlets -
+  @IBOutlet weak var articleTitle: UILabel!
+  @IBOutlet weak var articleDescription: UILabel!
+  @IBOutlet weak var articleImage: UIImageView!
+  
+  func configure(with item: NewsFeedItem) {
+    articleTitle.text = item.author
+    articleDescription.text = item.title // String(item.description.characters.filter { !"\n\r".characters.contains($0) })
+    if item.imageUrl == "nill" {
+      articleImage.image = UIImage(named: "news-icon")
+    } else {
+      articleImage.image(from: item.imageUrl)
     }
+  }
 }

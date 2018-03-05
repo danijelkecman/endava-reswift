@@ -11,7 +11,7 @@ import ReachabilitySwift
 
 enum Router: URLRequestConvertible {
     fileprivate static let _baseUrl = URL(string: "https://newsapi.org/v1")!
-    fileprivate static let _apiKey = "66cfbd7746dc49cc92660dddd735e899"
+    fileprivate static let _apiKey = "27299428bf924090910b53b0f03b7f81"
     
     fileprivate static let _reachability: Reachability? = {
         let reachability = Reachability.init()
@@ -69,7 +69,7 @@ enum Router: URLRequestConvertible {
             break
         case let .newsList(source):
             let queryItems = [URLQueryItem(name: "source", value: source),
-                              URLQueryItem(name: "sortBy", value: "latest"),
+                              URLQueryItem(name: "sortBy", value: "top"),
                               URLQueryItem(name: "apiKey", value: Router._apiKey)]
             var components = URLComponents(url: url.appendingPathComponent(path), resolvingAgainstBaseURL: true)
             components?.queryItems = queryItems

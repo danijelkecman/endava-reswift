@@ -9,16 +9,20 @@
 import UIKit
 
 extension UIImageView {
-    public func image(from url: String) {
-        URLSession.shared.dataTask(with: URL(string: url)!) { (data, response, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            DispatchQueue.main.async {
-                let image = UIImage(data: data!)
-                self.image = image
-            }
-        }.resume()
+  public func image(from url: String) {
+    guard let url = URL(string: url) else {
+      self.image = UIImage(named: "news-icon")
+      return
     }
+    URLSession.shared.dataTask(with: url) { (data, response, error) in
+      if error != nil {
+        log.error(error!.localizedDescription)
+        return
+      }
+      DispatchQueue.main.async {
+        let image = UIImage(data: data!)
+        self.image = image
+      }
+      }.resume()
+  }
 }
