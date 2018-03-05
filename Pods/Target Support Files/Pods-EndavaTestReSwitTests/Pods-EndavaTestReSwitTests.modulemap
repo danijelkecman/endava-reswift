@@ -1,6 +1,0 @@
-framework module Pods_EndavaTestReSwitTests {
-  umbrella header "Pods-EndavaTestReSwitTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

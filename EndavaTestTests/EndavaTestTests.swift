@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import EndavaTest
 
 class EndavaTestTests: XCTestCase {
     
